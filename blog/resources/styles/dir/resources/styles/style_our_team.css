@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    overflow-y:hidden;
+    overflow-x: hidden;
+    padding: 0;
+    background-color: #555;
+    height: 100%;
+    width: 100%;
+}
+body{
+    position:absolute;
+    top:0;
+    left: 0;
+}
+#f1_container {
+  display:inline-block;
+  width:20%;
+  margin:0 1% 0 1%;
+  height: 100%;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#pname{
+    margin: 0 0 50% 0;
+    text-decoration:none;
+}
+#f1_card img{
+    border-radius:14px;
+}
+#f1_card {
+  background:#333;
+  font-family: 'PT Sans', sans-serif;
+  width: 100%;
+  height: 100%;
+  border-color:black;
+  border-radius:14px;
+  border-width:3px;
+  border-style:solid;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  color:white;
+  text-align:center;
+}
+.back{
+  text-align: left;
+  font-size:1.8vh;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: #333;
+  background-color: #aaa;
+  border-radius:14px;
+}
+#under{
+  text-decoration: underline;
+}
+#allplayers{
+    position:absolute;
+    top:12%;
+    left:8.5%;
+    height:95%;
+    width:100%;
+}
+#player-row{
+    height: 38%;
+    width:80%;
+    margin:0 0 2% 0;
+}
+

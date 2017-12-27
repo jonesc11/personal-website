@@ -1,0 +1,43 @@
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #555;
+    height: 100%;
+    width: 100%;
+}
+body{
+    position:absolute;
+    top:0;
+    left: 0;
+}
+#contact{
+    position:absolute;
+    background-color: #333;
+    width:30%;
+    height:50%;
+    top:25%;
+    left:35%;
+    text-align:center;
+    box-shadow: 0 0 20px black;
+	border-radius:4px;
+	color:white;
+	font-family: 'PT Sans', sans-serif;
+	overflow: hidden;
+}
+form textarea{
+    width:80%;
+}
+#flags{
+    position:absolute;
+    width:98px;
+    top: 65px;
+    left:9%;
+    padding:12px 10px 12px 10px;
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px;
+	border:none;
+    box-shadow: 0 0 20px black;
+	border-radius:4px;
+	outline:none;
+}

@@ -1,0 +1,324 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #555;
+    height: 100%;
+    width: 100%;
+}
+body{
+    position:absolute;
+    top:0;
+    left: 0;
+}
+#search-form input[type=text]{
+    position:absolute;
+    width:60%;
+    top: 65px;
+    left:18.25%;
+    padding:12px 10px 12px 10px;
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px;
+	border:none;
+    box-shadow: 0 0 20px black;
+	border-radius:4px;
+	outline:none;
+}
+
+#card-list{
+    margin:3px 0 5px 0;
+    border-top:5px;
+    border-bottom:5px;
+    border-style:solid;
+    border-color:#333;
+    position:absolute;
+    top:120px;
+    left:0;
+    /* Firefox */
+    height: -moz-calc(100% - 185px);
+    /* WebKit */
+    height: -webkit-calc(100% - 185px);
+    /* Opera */
+    height: -o-calc(100% - 185px);
+    /*Standard*/
+    height:calc(100%-185px);
+    width:100%;
+    display:block;
+    overflow-y:scroll;
+}
+#card-list td{
+    width:27%;
+    margin:1.67% 0 1.67% 0;
+}
+#card-object{
+    background-color:#333;
+    height:100%;
+    width:100%;
+    padding:0 0 2px 0;
+    text-align: center;
+    font-size: 2vh;
+    font-family: 'PT Sans', sans-serif;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	color:white;
+}
+#card-object img{
+    height:50%;
+    width:25%;
+    margin:2%;
+    padding:0;
+    float:left;
+}
+#quan_ordering{
+    width:10%;
+    border-radius: 15px;
+    margin:1% 1% 1% auto;
+}
+#add_to_cart{
+    background-color:#b3b3cc;
+    border-color:#b3b3cc;
+    border-radius:5px;
+}
+
+#add_to_cart[type="submit"]{
+    outline:none;
+}
+#card-object h2{
+    margin-top:0;
+}
+#card-object h2 a{
+    margin-top:0;
+    color:white;
+    text-align:center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 3vh;
+}
+#card-object p{
+    color:white;
+    text-align:left;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-size: 2vh;
+}
+
+#card-list::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#card-list::-webkit-scrollbar
+{
+    border-radius: 10px;
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#card-list::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #aaa;
+}
+#card-view{
+    color:white;
+}
+#container {
+    border: none;
+    padding: 0 5px 10px 5px;
+    border-radius: 15px;
+    background-color: #333;
+    height: 64%;
+    width: 37%;
+    position: absolute;
+    top: 18%;
+    box-shadow: 0 0 20px black;
+    left: 26%;
+    font-size: 2vh;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+#inputwrap{
+    position:absolute;
+    right:0;
+}
+
+#right_sec{
+    position: absolute;
+    width:65%;
+    height:65%;
+    padding-left: 2.5%;
+    left:30%;
+    top:20%;
+    border-radius:15px 0  0 15px;
+    background-color: #333;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+
+}
+#details{
+    width:50%;
+    z-index: 2;
+    position: absolute;
+    left:25%;
+    padding:10px;
+    top:13%;
+    border-radius: 15px;
+    background-color: #333;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    padding-right: 30px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+#details td{
+    vertical-align: text-top;
+}
+#details td img{
+	margin-right:20px;
+}
+#payment{
+    position:absolute;
+    background-color: #333;
+    width:20%;
+    padding:1% 5% 1% 5%;
+    top:15%;
+    left:35%;
+    border-radius: 15px;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+#cartitem{
+    margin: 25px 0 0 11%;
+    padding-top: 2px;
+}
+#cartitem tr{
+    height:50px;
+}
+#cartitem tr td{
+    border-top: 2px;
+    border-top-style: solid;
+    height: 50px;
+    width:140px;
+    padding:10px;
+    color:white;
+    background-color: #333;
+}
+#cartitem tr td a{
+	color:white;
+	font-size: larger;
+}
+#cartitem tr td img{
+    position: relative;
+    width:60px;
+    height:80px;
+    left:25%;
+}
+#cartitem tr td {
+    color: white;
+}
+#cartitem{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#cartitem strong{
+    position: relative;
+    width:30%;
+    left:0%;
+}
+#checkout a {
+    color:white;
+    text-decoration: none;
+}
+#checkout{
+    margin: 10px 0 75px 11%;
+    color:white;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    background-color: #333;
+    border-radius: 15px;
+    width:200px;
+    padding:10px;
+    height:auto;
+    position: absolute;
+    font-size: 2.5vh;
+}
+#checkout:hover{
+    cursor:pointer;
+    background-color: black;
+}
+#discount_code a {
+    color:white;
+    text-decoration: none;
+}
+#discount_code{
+    margin: 10px 0 75px calc(11% + 250px);
+    color:white;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    background-color: #333;
+    border-radius: 15px;
+    width:350px;
+    padding:10px;
+    height:auto;
+    position: absolute;
+    font-size: 2.5vh;
+}
+#discount_code input[type=text]{
+    margin-left: 20px;
+}
+#code_submit{
+    margin-left:10px;
+}
+#noitem{
+    position:absolute;
+    padding:0;
+    text-align: center;
+    background-color: #333;
+    width:auto;
+    padding:5px;
+    height:auto;
+    top:30%;
+    left:25%;
+    border-radius: 15px;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+#noitem h1{
+    font-size: 6vh;
+}
+#noitem a{
+    color:white;
+    text-decoration: none;
+} 
+#noitem a:hover{
+    text-decoration: underline;
+}
+#flags{
+    position:absolute;
+    width:98px;
+    top: 65px;
+    left:9%;
+    padding:12px 10px 12px 10px;
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px;
+	border:none;
+    box-shadow: 0 0 20px black;
+	border-radius:4px;
+	outline:none;
+}
+#flag_select{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:90px;
+    border-radius: 15px;
+    background-color: #333;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+#flag_img{
+    width:220px;
+    height:150px;
+}

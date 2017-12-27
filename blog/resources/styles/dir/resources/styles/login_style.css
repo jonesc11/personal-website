@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #555;
+}
+
+#container {
+    border: none;
+    border-radius: 15px;
+    background-color: #333;
+    height: 45%;
+    width: 27%;
+    position: absolute;
+    top: 28%;
+    box-shadow: 0 0 20px black;
+    left: 36%;
+}
+#container h1{
+    width: 80%;
+    height: auto;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    text-align: left;
+    font-size: 4vh;
+    padding: 3% 10%;
+}
+
+#container h2 {
+    width: 80%;
+    height: auto;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    text-align: left;
+    font-size: 2vh;
+    padding: 3% 10%;
+}
+#container p {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    font-size: 2vh;
+    padding:  3% 10%;
+}
+#container a {
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    color: white;
+}
+#container a:hover {
+    text-decoration: underline;
+}

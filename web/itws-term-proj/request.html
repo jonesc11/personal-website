@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPI FIXX - Submit a Ticket</title>
+    <link rel="stylesheet" type="text/css" href="resources/style.css" />
+  </head>
+  <body>
+    <div id="top">
+      <h1>RPI Fixx</h1>
+      <div id="menu">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="request.html">Submit Request</a></li>
+          <li><a href="history.html">View History</a></li>
+          <li><a href="worker/index.html">Jobs</a></li>
+          <li><a href="admin/index.html">Admin</a></li>
+          <li><a href="admin/employees.html">Employees</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="submitForm">
+      <form method="post" action="submit.php">
+        <table>
+        <!--
+          <tr>
+            <td class="label">Job Name:</td>
+            <td style="width: 80%;"><input type="text" name="jobName" maxlength="40" required/><br /><span class="subscript">(40 characters max)</span></td>
+          </tr>
+        -->
+          <tr>
+            <td class="label">Location:</td>
+            <td style="width: 85%;"><input type="text" name="location" maxlength="40" required/><br /><span class="subscript">(40 characters max)</span></td>
+          </tr>
+          <tr>
+            <td class="label">Issue:</td>
+            <td><textarea name="description" maxlength="1000" required></textarea><br /><span class="subscript">(1,000 characters max)</span></td>
+          </tr>
+          <tr>
+            <td class="label">Comments:</td>
+            <td><textarea name="comments" maxlength="1000"></textarea><br /><span class="subscript">(1,000 characters max)</span></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input id="submit" type="submit" value="Submit Request" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

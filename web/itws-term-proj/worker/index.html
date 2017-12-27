@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPI FIXX - Worker Interface</title>
+    <link rel="stylesheet" type="text/css" href="../resources/style.css" />
+
+  </head>
+  <body>
+    <div id="top">
+      <h1>RPI Fixx: Worker's Page</h1>
+      <div id="menu">
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../request.html">Submit Request</a></li>
+          <li><a href="../history.html">View History</a></li>
+          <li><a href="index.html">Jobs</a></li>
+          <li><a href="../admin/index.html">Admin</a></li>
+          <li><a href="../admin/employees.html">Employees</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="tables">
+      <h2>Current Jobs</h2>
+      <table id="currentJobs">
+        <tr class="head">
+          <th style="width:5%;">Time of Submission</th>
+          <th style="width:40%;">Information</th>
+          <th style="width:15%;">Location</th>
+          <th style="width:10%;">Status</th>
+          <th style="width:10%;">Request Help</th>
+          <th style="width:15%;">Actions</th>
+        </tr>
+        <tr class='data'>
+          <td class='center'>12/17/16</td>
+          <td>Light bulb out</td>
+          <td>LOW 4050</td>
+          <td class='center'><div style='color:orange;'>In Progress</div></td>
+          <td class='center'><form name='request' method='post'><input type='hidden' name='req_id' value='$id'><input type='submit' name='request' value='Request'<br /></form></td>
+          <td class='center'>
+            <form method='post'><input type='hidden' name='req_id' value='$id'>
+            <select name='action'><option>Finish</option><option>Delay</option><option>Leave</option><option>Close</option></select>
+            <input id='submit' type='submit' value='Go' />
+            </form>
+          </td>
+        </tr>
+      </table>
+      <h2>Help Flags</h2>
+      <table id="helpFlags">
+        <tr class="head">
+          <th style="width:5%;">Time of Submission</th>
+          <th style="width:40%;">Information</th>
+          <th style="width:15%;">Location</th>
+          <th style="width:15%;">Current Workers</th>
+          <th style="width:10%;">Status</th>
+          <th style="width:15%;">Actions</th>
+        </tr>
+        <tr class='data'>
+          <td class='center'>12/18/16</td>
+          <td>Toilet won't flush</td>
+          <td>Amos Eaton Bathroom</td>
+          <td>seoa</td>
+          <td class='center'><div style='color:orange;'>In Progress</div></td>
+          <td class='center'><form name='take' method='post'><input type='hidden' name='req_id' value='$id'><input type='submit' name='take' value='Help With Job'/></form></td>
+        </tr>
+      </table>
+      <h2>Job Queue</h2>
+      <table id="jobQueue">
+        <tr class="head">
+          <th style="width:15%;">Time of Submission</th>
+          <th style="width:40%;">Information</th>
+          <th style="width:15%;">Location</th>
+          <th style="width:15%;">RCS ID</th>
+          <th style="width:15%;">Actions</th>
+        </tr>
+        <tr class='data'>
+          <td class='center'>12/20/16</td>
+          <td>Sink leaking</td>
+          <td>Davison Rm 204</td>
+          <td>jonesc11</td>
+          <td class='center'><form name='take' method='post'><input type='hidden' name='req_id' value='$id'><input type='submit' name='take' value='Take Job'/></form></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
