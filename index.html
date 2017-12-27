@@ -1,97 +1,130 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="resources/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" />
-    <link rel="shortcut icon" href="resources/images/favicon.ico"/>
-    <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="resources/home_script.js"></script>
+    <!-- Set meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!-- Load CSS, including Bootstrap -->
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="resources/css/custom-styles.css">
+    
+    <!-- Load JavaScript, including Bootstrap and jQuery -->
+    <script type="text/javascript" src="resources/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="resources/js/popper.min.js"></script>
+    <script type="text/javascript" src="/resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/resources/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/resources/js/custom-scripts.js"></script>
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     
     <title>Collin Jones</title>
   </head>
   <body>
-    <div class="parallax-img-1"></div>
-      <div id="top">
-        <div class="opaque-container">
-          <h1>Welcome.</h1>
-          <h2>I'm Collin.</h2>
-          <h3>Let's Explore.</h3>
-        <div class="next-button"><a href="#who" class="circle"><span class="down-arrow"></span></a></div>
-      </div>
-    </div>
-    <div id="who">
-      <h1>Who am I?</h1>
-      <div id="text-img-music">
-        <h2>Musician</h2>
-        <p>Guitar player since sixth grade, rocking out to many '80s and '90s hits.</p>
-        <img src="resources/images/guitarist.jpg" alt="Guitarist" title="Guitarist" />
-      </div>
-      <div id="text-img-scout">
-        <h2>Eagle Scout</h2>
-        <p>Member of the Boy Scouting program since I was six, earning my Eagle Scout in 2012.</p>
-        <img src="resources/images/scouter.jpg" alt="Eagle Scout" title="Eagle Scout" />
-      </div>
-      <div id="text-img-runner">
-        <h2>Runner</h2>
-        <p>Avid runner and athlete, senior year high school track and cross country captain.</p>
-        <img src="resources/images/runner.jpg" alt="Runner" title="Runner" />
-      </div>
-      <div id="text-img-student">
-        <h2>Student</h2>
-        <p>Member of the Rensselaer Polytechnic Institute Class of 2020, currently sporting a 3.83 GPA.</p>
-        <img src="resources/images/student.jpg" alt="Rensselaer Polytechnic Institute" title="Rensselaer Polytechnic Institute" />
-      </div>
-      <div class="next-button"><a href="#knowledge" class="circle"><span class="down-arrow"></span></a></div>
-    </div>
-    <div class="parallax-img-2"></div>
-    <div id="knowledge">
-      <div class="opaque-container">
-        <div class="page-title">Areas of Expertise</div>
-        <a href="web"><div class="left-title"><p>Web<br />Development</p><p class="sub">HTML, CSS, JavaScript...</p></div></a>
-        <a href="backend"><div class="right-title"><p>Object-Oriented<br />Development</p><p class="sub">Java, C/C++, Python...</p></div></a>
-        <div class="vertical-divider"><table class="vert-div"><tr><td></td></tr></table></div>
-        <div class="left-button"><a href="web" class="circle"><span class="left-arrow"></span></a></div>
-        <div class="right-button"><a href="backend" class="circle"><span class="right-arrow"></span></a></div>
-      </div>
-    </div>
-    <div id="hire">
-      <h1>Why Hire Me?</h1>
-      <div class="hire-float" style="top: 20vh; left: 10vw;">
-        <p>I design and work through solutions based on the problems the program aims to solve</p>
-      </div>
-      <div class="hire-float" style="top: 15vh; left: 40vw;">
-        <p>I have substantial experience in many programming languages and in solving many problems</p>
-      </div>
-      <div class="hire-float" style="top: 20vh; left: 70vw;">
-        <p>I often aid peers in coding problems and other technical support</p>
-      </div>
-      <div class="hire-float" style="bottom: 28vh; left: 10vw;">
-        <p>I am an effective communicator and I'm organized &amp; methodical with my work</p>
-      </div>
-      <div class="hire-float" style="bottom: 23vh; left: 40vw;">
-        <p>I excel at managing my time effectively and I consistently meet deadlines</p>
-      </div>
-      <div class="hire-float" style="bottom: 28vh; left: 70vw;">
-        <p>I work well with teams of people and complete tasks assigned to me</p>
-      </div>
-      <div class="next-button"><a href="#contact" class="circle"><span class="down-arrow"></span></a></div>
-    </div>
-    <div class="parallax-img-3"></div>
-    <div id="contact">
-      <div class="opaque-container">
-        <h1>Contact Me!</h2>
-        <div id="resumeLink">
-          <a href="resources/CollinJones-resume.pdf" target="_blank">Download my Resume</a>
+    <div class="wrapper">
+      <!--
+      <div id="sidebar">
+        <div class="sidebar-header">
+          <h3>Navigation</h3>
         </div>
-        <div id="mailLink">
-          <a href="mailto:collindjones.653@gmail.com">Email Me</a>
+        <!-- Projects Menu -->
+        <!--<ul class="list-unstyled">
+          <li class="active"><a href="#">Home</a></li>
+          <li>
+            <!-- Projects submenu -->
+            <!--<a href="#" id="projects-toggle" class="list-unstyled">Projects</a>
+            <ul id="projects-submenu" class="list-unstyled">
+              <li><a href="#">Project 1</a></li>
+              <li><a href="#">Project 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>-->
+      <div id="content">
+        <!--<div id="sidebar-toggle">
+          <div class="hamburger-bar"></div>
+          <div class="hamburger-bar"></div>
+          <div class="hamburger-bar"></div>
+          <div class="negative-slope-line"></div>
+          <div class="positive-slope-line"></div>
+        </div>-->
+        <div id="header">
+          <h1 id="title">Collin Jones</h1>
         </div>
-        <div class="next-button"><a href="#top" class="circle"><span class="up-arrow"></span></a></div>
+        <div id="about">
+          <!-- Profile -->
+          <div id="profile">
+            <div id="profile-image"src="resources/img/profile-img2.jpg"></div>
+            <h3><span class="center"><strong>Collin Jones</strong></span></h3>
+            <p><span class="center"><strong>Age:</strong> 19 years old</span><br />
+            <span class="center"><strong>School Location:</strong> Troy, NY</span><br/>
+            <span class="center"><strong>Permanent Location:</strong> Gorham, ME</span></p>
+          </div>
+          <!-- Quick Description -->
+          <div id="who-am-i">
+            <h3>Who am I?</h3>
+            <p>My name is Collin Jones, and I am a second-year Computer Science and Information
+               Technology &amp; Web Science student at Rensselaer Polytechnic Institute. Although it is
+               only my second year at RPI, I anticipate graduating a year early in May 2019. I am from
+               Gorham, Maine, located just outside of Maine's largest city, Portland.</p>
+            <p>In my free time, I'm a guitar player, runner, and scouter, earning my Eagle Scout award in
+               October of 2012, my freshman year of High School. I also enjoy everything outdoors,
+               including camping, hiking, fishing, and cooking.</p>
+          </div>
+          <!-- Links -->
+          <div id="profile-links">
+            <a href="https://linkedin.com/in/collindjones">
+              <img src="resources/img/linkedin-icon.png" title="LinkedIn" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/jonesc11">
+              <img src="resources/img/github-icon.png" title="GitHub" alt="GitHub" />
+            </a>
+            <a href="resources/CollinJones-resume.pdf">
+              <img src="resources/img/resume-icon.png" title="Resume" alt="Resume" />
+            </a>
+            <a href="mailto:collindjones.653@gmail.com">
+              <img src="resources/img/mail-icon.png" title="Email" alt="Email" />
+            </a>
+          </div>
+        </div>
+        <div id="projects">
+          <h1><strong>Projects</strong></h1>
+          <div class="proj-desc-left proj-desc">
+            <h3>RateMyCourses</h3>
+            <p>RateMyCourses is a tool for students to use to decide which courses to take based on
+               other students' past experiences. Students could enter the website to read ratings and
+               reviews on courses for any university, as well as post their own ratings and reviews. This
+               was built in HTML, CSS, JavaScript, AJAX, and PHP. Although I touched on all aspects of the
+               project, my main focus was on the PHP and JavaScript/AJAX. This was a project for Web
+               Systems Development in the Fall of 2017.</p>
+          </div>
+          <div class="proj-desc-right proj-desc">
+            <h3>Paint By Pairs Solver</h3>
+            <p>In C++ using recursion, I wrote a program to find all possible solutions to a game called
+               Paint by Pairs. As part of this assignment, I optimized my program to solve the puzzles
+               quicker, and I found ways to minimize the amount of memory I used. This was a homework
+               assignment for Data Structures in the Fall of 2016.</p>
+          </div>
+          <div class="proj-desc-center proj-desc">
+            <h3>RPI Fixxer</h3>
+            <p>RPI Fixxer is an online ticketing system for the school's maintenance team that users
+               can log into via the school's authentication service and submit repair requests. Workers can
+               then view that request, claim the request, and produce status updates on that job. Admins
+               could see what jobs were taken by which workers to track productivity. This was a project
+               for Introduction to ITWS in the Fall of 2016.</p>
+          </div>
+        </div>
+        <div id="footer">
+          Collin Jones<br/>
+          (207) 929-0477<br/>
+          <a href="mailto:collindjones.653@gmail.com" title="email">collindjones.653@gmail.com</a>
+        </div>
       </div>
-    </div>
-    <div id="contactButton">
-      <a href="mailto:collindjones.653@gmail.com" class="cb">Contact Me!</a>
     </div>
   </body>
 </html>
