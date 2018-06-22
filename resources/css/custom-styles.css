@@ -106,35 +106,24 @@
   color: #fff;
 }
 
+.proj-desc {
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  padding: 8px;
+}
+
 .proj-desc-right {
-  display: inline-block;
   float: right;
-  height: 100%;
-  width: 50%;
-  padding: 8px;
 }
 
-.proj-desc-right p {
-  font-size: 18px;
-}
-
-.proj-desc-left {
-  display: inline-block;
-  height: 100%;
-  width: 50%;
-  padding: 8px;
-}
-
-.proj-desc-right p {
-  font-size: 18px;
+.proj-desc p {
+  font-size: 1em;
 }
 
 .proj-desc-center {
-  display: inline-block;
-  width: 50%;
   margin: 0 25%;
   height: auto;
-  padding: 8px;
 }
 
 #footer {
