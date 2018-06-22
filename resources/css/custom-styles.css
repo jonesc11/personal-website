@@ -152,6 +152,15 @@
     margin: 0;
     float: none;
   }
+
+  #projects, #about {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #projects p {
+    text-align: left;
+  }
   
   #profile {
     width: 100%;
